@@ -7,6 +7,7 @@
   --themeDotBorder: #24292e;
   --previwewBg: rgba(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
+  --buttonColor: #000000;
 }
 html,
 body,
@@ -34,7 +35,8 @@ li,
 span,
 label,
 input,
-textarea {
+textarea,
+button {
   color: var(--secondarytext);
   font-family: "Roboto Mono", monospace;
 }
@@ -289,6 +291,41 @@ h6 {
   color: #4b5156;
   font-size: 14px;
 }
+.contact-wrapper {
+  padding: 4rem 0px;
+}
+.contact-form {
+  margin: auto;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: var(--mainColor);
+  /* border: 1px solid var(--borderColor); */
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+}
+.input-field {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  background-color: var(--secondaryColor);
+  border: none;
+  font-size: 1rem;
+  margin: 0.5rem 0rem 0.75rem 0rem;
+}
+.input-field:focus {
+  box-shadow: none;
+  outline: none;
+}
+.button-send {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0rem;
+  border: none;
+  width: 100%;
+  background-color: var(--buttonColor);
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
@@ -296,5 +333,16 @@ h6 {
   }
   .right-col {
     justify-content: center;
+  }
+  #preview-shadow {
+    background-color: var(--previewShadow);
+    width: 250px;
+    height: 150px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  #preview {
+    width: 250px;
+    padding: 0.5rem;
   }
 }
